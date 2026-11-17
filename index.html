@@ -15,7 +15,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
   :root{
     /* water & medication: sky, ocean blue, water cyan, a coral pill accent, deep navy */
@@ -24,9 +24,9 @@
     --maroon:#0369a1; --maroon-2:#0284c7;
     --aqua:#06b6d4; --coral:#ff6b57; --deep:#0b2540; --sky:#7dd3fc;
     --line:rgba(15,23,42,.1);
-    --serif:"Fraunces", Georgia, serif;
+    --serif:"EB Garamond", Georgia, serif;
     --sans:"Plus Jakarta Sans", system-ui, sans-serif;
-    --mono:"JetBrains Mono", ui-monospace, monospace;
+    --mono:"IBM Plex Mono", ui-monospace, monospace;
     --r:24px;
     --ease:cubic-bezier(.2,.8,.2,1);
   }
@@ -177,6 +177,13 @@
   .rv{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease), transform .8s var(--ease)}
   .rv.on{opacity:1;transform:none}
   @media (prefers-reduced-motion: reduce){ .rv{opacity:1;transform:none} html{scroll-behavior:auto} }
+/* Polish 18.11.2026: Charles Liu's UI rules + Emil Kowalski motion rules */
+a{text-underline-offset:.2em}
+h1,h2,h3{text-wrap:balance}
+p{text-wrap:pretty}
+sup{line-height:0;position:relative;vertical-align:baseline;top:-.5em}
+.btn:active{transform:scale(.97);transition-duration:.1s}
+@media (hover:none){.btn:hover{transform:none}}
 </style>
 </head>
 <body>
@@ -288,13 +295,13 @@
   <div class="wrap">
     <div class="head">
       <div>
-        <div class="eyebrow rv">What's next</div>
+        <div class="eyebrow rv">What’s next</div>
         <h2 class="rv">Toward a <em>production-ready</em> product.</h2>
       </div>
     </div>
     <div class="grid">
       <div class="card rv"><span class="tag">Learned</span><h3>What the prototypes showed</h3>
-        <ul class="list"><li>Capacity matched the analytical model: 3–5 capsules</li><li>Early hinge misalignment was found and fixed</li><li>Cord holes cost internal space, so they were moved</li><li>Waterproof sealing was outside this stage's scope</li></ul></div>
+        <ul class="list"><li>Capacity matched the analytical model: 3–5 capsules</li><li>Early hinge misalignment was found and fixed</li><li>Cord holes cost internal space, so they were moved</li><li>Waterproof sealing was outside this stage’s scope</li></ul></div>
       <div class="card rv"><span class="tag">Next</span><h3>Future improvements</h3>
         <ul class="list"><li>Dividers to separate different medications or doses</li><li>TPU or food-grade silicone for durability</li><li>A living or reinforced hinge for many open cycles</li><li>Water, impact and heat testing, then larger user tests</li></ul></div>
     </div>
